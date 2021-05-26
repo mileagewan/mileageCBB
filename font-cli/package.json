@@ -1,0 +1,23 @@
+{
+  "name": "@mileage/font-cli",
+  "version": "1.0.0",
+  "description": "font-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mileage-font-cli": "index.js"
+  },
+  "keywords": [
+    "font",
+    "cli",
+    "makeFont"
+  ],
+  "author": "wanlicheng",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "webfonts-generator": "^0.4.0"
+  }
+}
