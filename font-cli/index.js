@@ -28,7 +28,12 @@ const createFont = (src, dest, fontName) => {
     files,
     dest: path.join(process.cwd(), dest),
     fontName: fontName || 'mileage-font',
-    html: true
+    html: true,
+    templateOptions: {
+      classPrefix: `${fontName}-` || 'mileage-font',
+      baseSelector: `.${fontName}` || '.mileage-font'
+    },
+    types: ['woff2', 'woff', 'ttf']
   }, function (error) {
     if (error) {
       console.log('Fail!', error);
